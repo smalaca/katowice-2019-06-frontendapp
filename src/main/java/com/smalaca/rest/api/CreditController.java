@@ -14,6 +14,8 @@ import java.util.UUID;
 @RestController
 @RequestMapping("/credit")
 public class CreditController {
+    private static final String SUCCESS = "SUCCESS";
+
     private final Map<String, CreditStatus> creditIds = new HashMap<>();
     private final BikService bikService;
 
@@ -31,11 +33,15 @@ public class CreditController {
     }
 
     private CreditStatus processClientRequest(BankClientDto bankClientDto) {
-        if (bikService.check(bankClientDto)) {
+        if (hasValidBikHistory(bankClientDto)) {
             return CreditStatus.success();
         }
 
         return CreditStatus.fail();
+    }
+
+    private boolean hasValidBikHistory(BankClientDto bankClientDto) {
+        return SUCCESS.equals(bikService.check(bankClientDto));
     }
 
     private String anId() {

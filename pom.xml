@@ -19,8 +19,8 @@
     <httpclient.version>4.5</httpclient.version>
     <spring-boot-starter-web.version>2.0.3.RELEASE</spring-boot-starter-web.version>
     <junit.version>4.11</junit.version>
+    <guava.version>27.0.1-jre</guava.version>
   </properties>
-
 
   <parent>
     <groupId>org.springframework.boot</groupId>
@@ -33,6 +33,12 @@
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-web</artifactId>
       <version>${spring-boot-starter-web.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>com.google.guava</groupId>
+      <artifactId>guava</artifactId>
+      <version>${guava.version}</version>
     </dependency>
 
     <dependency>
