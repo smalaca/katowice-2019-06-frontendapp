@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
@@ -16,6 +15,10 @@
     <maven.compiler.target>1.8</maven.compiler.target>
     <jbehave.spring.version>3.9.5</jbehave.spring.version>
     <assertj.core.version>3.1.0</assertj.core.version>
+    <testing-data.version>2.0-SNAPSHOT</testing-data.version>
+    <httpclient.version>4.5</httpclient.version>
+    <spring-boot-starter-web.version>2.0.3.RELEASE</spring-boot-starter-web.version>
+    <junit.version>4.11</junit.version>
   </properties>
 
 
@@ -29,26 +32,25 @@
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-web</artifactId>
-      <version>2.0.3.RELEASE</version>
+      <version>${spring-boot-starter-web.version}</version>
     </dependency>
 
     <dependency>
       <groupId>org.apache.httpcomponents</groupId>
       <artifactId>httpclient</artifactId>
-      <version>4.5</version>
+      <version>${httpclient.version}</version>
     </dependency>
 
     <dependency>
       <groupId>com.smalaca</groupId>
       <artifactId>testing-data</artifactId>
-      <version>1.0-SNAPSHOT</version>
-      <scope>test</scope>
+      <version>${testing-data.version}</version>
     </dependency>
 
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>4.11</version>
+      <version>${junit.version}</version>
       <scope>test</scope>
     </dependency>
 
