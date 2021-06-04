@@ -16,7 +16,7 @@
     <jbehave.spring.version>3.9.5</jbehave.spring.version>
     <assertj.core.version>3.1.0</assertj.core.version>
     <testing-data.version>2.0-SNAPSHOT</testing-data.version>
-    <httpclient.version>4.5</httpclient.version>
+    <httpclient.version>4.5.13</httpclient.version>
     <spring-boot-starter-web.version>2.0.3.RELEASE</spring-boot-starter-web.version>
     <junit.version>4.11</junit.version>
     <guava.version>27.0.1-jre</guava.version>
